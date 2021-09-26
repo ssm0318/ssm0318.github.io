@@ -253,7 +253,6 @@ footer.fixed-bottom {
     color: var(--global-footer-text-color);
     padding-top: 9px;
     padding-bottom: 8px;
-    padding: 0; 
   }
   a {
     color: var(--global-footer-link-color);
@@ -355,7 +354,7 @@ footer.sticky-bottom {
 .fun {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
-  // margin-bottom: 2.5rem;
+  margin-bottom: 270px !important;
 
   .video-title {
     font-weight: bolder;
