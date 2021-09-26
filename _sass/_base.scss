@@ -4,6 +4,19 @@
 
 // Typography
 
+.navbar-brand {
+  font-family: Roboto Slab;
+  font-weight: 700;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Roboto Slab;
+}
+
+.nav-item, p, em, div, span, strong {
+  font-family: Rubik;
+}
+
 p, h1, h2, h3, h4, h5, h6, em, div, span, strong {
   color: var(--global-text-color);
 }
@@ -50,14 +63,21 @@ blockquote {
 
 // Profile
 
+.clearfix {
+  margin-top: 70px;
+}
+
 .profile {
-  margin-left: 1rem;
-  width: 100%;
+  margin-right: 2.5rem;
+  margin-left: 0.5rem;
+  margin-bottom: 3.5rem;
 
   .address {
     margin-bottom: 5px;
     margin-top: 5px;
     font-family: monospace;
+    font-size: 12px;
+    text-align: center;
     p {
       display: inline-block;
       margin: 0;
@@ -203,11 +223,12 @@ blockquote {
 
 .social {
   text-align: center;
+  margin-top: 40px;
   .contact-icons {
     font-size: 4rem;
     a {
       i::before {
-        color: var(--global-text-color);
+        color: var(--global-footer-bg-color);
         -webkit-transition: all 0.2s ease-in-out;
       }
       &:hover {
@@ -227,10 +248,12 @@ blockquote {
 footer.fixed-bottom {
   background-color: var(--global-footer-bg-color);
   font-size: 0.75rem;
+
   .container {
     color: var(--global-footer-text-color);
     padding-top: 9px;
     padding-bottom: 8px;
+    padding: 0; 
   }
   a {
     color: var(--global-footer-link-color);
@@ -242,10 +265,22 @@ footer.fixed-bottom {
 }
 
 footer.sticky-bottom {
+  background-color: var(--global-footer-bg-color);
   border-top: 1px solid $grey-color-light;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  font-size: 0.9rem;
+  padding-top: 8px;
+  padding-bottom: 9px;
+  font-size: small;
+
+  .container {
+    color: var(--global-footer-text-color);
+  }
+  a {
+    color: var(--global-footer-link-color);
+    &:hover {
+      color: var(--global-theme-color);
+      text-decoration: none;
+    }
+  }
 }
 
 
@@ -316,6 +351,98 @@ footer.sticky-bottom {
 
 
 // Projects
+
+.fun {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  // margin-bottom: 2.5rem;
+
+  .video-title {
+    font-weight: bolder;
+  }
+
+  .video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 40%;
+    margin-bottom: 50px;
+    overflow: hidden;
+    background: transparent;
+  }
+
+  .video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+
+  .badge {
+    background: 0 0;
+    border: 1px solid var(--global-theme-color);
+    display: inline-block !important;
+    color: var(--global-theme-color) !important;
+    border-radius: 3px;
+    display: inline-block;
+    font-family: Inconsolata;
+    padding: 2px 7px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    line-height: 1;
+    margin: 3px 5px 3px 0;
+    box-shadow: none !important;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  }
+
+  .badge:hover {
+    background: var(--global-theme-color);
+    color: white !important;
+    font-weight: 600;
+  }
+
+  .categories {
+    margin-bottom: 2rem !important;
+    text-align: center;
+
+    .category-button {
+      background-color: #C3C3C3;
+      border-radius: 9px;
+      border-style: none;
+      box-sizing: border-box;
+      color: white;
+      cursor: pointer;
+      display: inline-block;
+      font-weight: 100;
+      font-size: small;
+      list-style: none;
+      margin: 0;
+      outline: none;
+      padding: 2px 9px;
+      position: relative;
+      text-align: center;
+      text-decoration: none;
+      transition: color 100ms;
+      vertical-align: baseline;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+    }
+
+    .active {
+      background-color: var(--global-hover-color);
+    }
+  
+    .category-button:hover,
+    .category-button:focus {
+      background-color: var(--global-hover-color);
+    }
+  }
+}
 
 .projects {
   a {

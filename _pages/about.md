@@ -1,24 +1,23 @@
 ---
 layout: about
 title: about
+label: 1_about
 permalink: /
-description: <a href="#">Affiliations</a>. Address. Contacts. Moto. Etc.
+description:
 
 profile:
-  align: right
+  align: left
   image: prof_pic.jpg
   address: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    no that is not your cursor.. 😄
 
 news: true  # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com){:target="\_blank"}. You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+Hi! :) I am a final year undergraduate student at [Seoul National University](https://en.snu.ac.kr/), majoring in Happiness Studies (a student-designed major!), Psychology, and Computer Science & Engineering. I am fortunate to be advised by Dr. Youngki Lee at [HCS Lab](https://hcs.snu.ac.kr/).
 
-Put your address / P.O. box / other info right below your picture. You can also disable any these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+Broadly speaking, I am interested in cross-disciplinary works, such as 1) building playful :monkey:, personalized, and situation-aware `intervention systems` that promote well-being, 2) capturing and understanding `individual differences` in the digital world, and 3) integrating data-driven and theory-driven approaches for `human-centered computing` research.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/){:target="\_blank"} and [Academicons](https://jpswalsh.github.io/academicons/){:target="\_blank"}, like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+In my free time, I chat with my two chihuahuas and [sing](https://www.youtube.com/c/%EA%B0%90%EA%B7%A4%EA%B0%9C%EA%B5%AC%EB%A6%ACtangerinefrogs).

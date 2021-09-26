@@ -1,12 +1,16 @@
 ---
 layout: page
 title: projects
+label: 2_projects
 permalink: /projects/
 description: A growing collection of your cool projects.
 nav: true
-display_categories: [work, fun]
+display_categories: false
 horizontal: false
 ---
+
+<!-- https://langrsoft.com/2020/03/26/filtering-blog-posts-by-category-with-jekyll/ -->
+
 <div class="projects">
   {% if site.enable_project_categories and page.display_categories %}
   <!-- Display categorized projects -->
