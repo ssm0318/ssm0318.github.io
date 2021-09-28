@@ -9,5 +9,4 @@ category: fun
 
 <div class="publications">
    <h2>(page under construction)</h2>
-  {% bibliography -f papers -q @*[selected=true]* %}
 </div>
