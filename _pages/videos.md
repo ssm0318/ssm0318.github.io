@@ -1,8 +1,8 @@
 ---
 layout: page
-title: fun
-label: 3_fun
-permalink: /fun/
+title: videos
+label: 3_videos
+permalink: /videos/
 description:
 nav: true
 category: [Singing, Video Production]
@@ -11,19 +11,7 @@ category: [Singing, Video Production]
 <!-- https://langrsoft.com/2020/03/26/filtering-blog-posts-by-category-with-jekyll/ -->
 
 <div class="fun">
-  <div class="categories">
-    <button id="ALL" class="category-button" onclick="filterUsingCategory('ALL')" autofocus>ALL</button>
-    {% assign site_categories = site.funs | map: "category" | compact | uniq %}
-    {% for category in site_categories %}
-      <button id="{{ category }}" class="category-button" onclick="filterUsingCategory('{{ category }}')">{{ category }}
-        {% assign sel = site.funs | where_exp:"item", "item.category contains category" %}
-        ({{ sel.size }})</button>
-    {% endfor %}
-  </div>
-
-  <!-- Display projects without categories -->
-  {% assign sorted_projects = site.funs | sort: "importance" %}
-  <!-- Generate cards for each project -->
+  {% assign sorted_projects = site.videos | sort: "importance" %}
   {% for project in sorted_projects %}
     <div class="row justify-content-sm-center" id="{{ project.importance }}">
       <div class="video-title col-sm-4 mt-3 mt-md-0">
@@ -42,7 +30,7 @@ category: [Singing, Video Production]
 <script type="text/javascript">
   function filterUsingCategory(selectedCategory) {
     var id = 0;
-    {% for post in site.funs %}
+    {% for post in site.videos %}
       var tags = {{ post.category | jsonify }};
 
       var postDiv = document.getElementById(({{ post.importance }}).toString());

@@ -1,10 +1,10 @@
 ---
 layout: page
-title: Peter, Paul & Mary - Puff the Magic Dragon
+title: Pentatonix - Cheerleader
 description: a project with a background image
-link: https://www.youtube.com/embed/yO4yNjypWI8
+link: https://www.youtube.com/embed/Wgd0SikK3B8
 importance: 2
-category: [Video Production, Singing]
+category: [Singing]
 ---
 
 Every project has a beautiful feature showcase page.

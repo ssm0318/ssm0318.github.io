@@ -1,10 +1,10 @@
-<!-- ---
+---
 layout: page
-title: AKMU - Freedom
-description: a project with a background image
-link: https://www.youtube.com/embed/mbJP6JS_BTg
-importance: 12
-category: [Singing]
+title: Daniel Powter - Bad Day
+description: Where is the moment we needed the most?
+link: https://www.youtube.com/embed/d9lY7iuHBw4
+importance: 3
+category: [Video Production, Singing]
 ---
 
 Every project has a beautiful feature showcase page.
@@ -75,4 +75,4 @@ Here's the code for the last row of images above:
         <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/11.jpg' | relative_url }}" alt="" title="example image"/>
     </div>
 </div>
-``` -->
+```

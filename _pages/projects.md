@@ -9,53 +9,48 @@ display_categories: false
 horizontal: false
 ---
 
-<!-- https://langrsoft.com/2020/03/26/filtering-blog-posts-by-category-with-jekyll/ -->
-
 <div class="projects">
-  {% if site.enable_project_categories and page.display_categories %}
-  <!-- Display categorized projects -->
-    {% for category in page.display_categories %}
-      <h2 class="category">{{category}}</h2>
-      {% assign categorized_projects = site.projects | where: "category", category %}
-      {% assign sorted_projects = categorized_projects | sort: "importance" %}
-      <!-- Generate cards for each project -->
-      {% if page.horizontal %}
-        <div class="container">
-          <div class="row row-cols-2">
-          {% for project in sorted_projects %}
-            {% include projects_horizontal.html %}
-          {% endfor %}
-          </div>
-        </div>
-      {% else %}
-        <div class="grid">
-          {% for project in sorted_projects %}
-            {% include projects.html %}
-          {% endfor %}
-        </div>
-      {% endif %}
+  <div class="categories">
+    <button id="ALL" class="category-button active" onclick="filterUsingCategory('ALL')">ALL</button>
+    {% assign site_categories = site.projects | map: "category" | compact | uniq %}
+    {% for category in site_categories %}
+      <button id="{{ category }}" class="category-button" onclick="filterUsingCategory('{{ category }}')">{{ category }}
+        {% assign sel = site.projects | where_exp:"item", "item.category contains category" %}
+        ({{ sel.size }})</button>
     {% endfor %}
+  </div>
 
-  {% else %}
-  <!-- Display projects without categories -->
-    {% assign sorted_projects = site.projects | sort: "importance" %}
-    <!-- Generate cards for each project -->
-    {% if page.horizontal %}
-      <div class="container">
-        <div class="row row-cols-2">
-        {% for project in sorted_projects %}
-          {% include projects_horizontal.html %}
-        {% endfor %}
-        </div>
-      </div>
-    {% else %}
-      <div class="grid">
-        {% for project in sorted_projects %}
-          {% include projects.html %}
-        {% endfor %}
-      </div>
-    {% endif %}
-
-  {% endif %}
-
+  {% assign sorted_projects = site.projects | sort: "importance" %}
+  <div class="container">
+    <div class="row">
+    {% for project in sorted_projects %}
+      {% include projects_horizontal.html %}
+    {% endfor %}
+    </div>
+  </div>
 </div>
+
+<script type="text/javascript">
+  function filterUsingCategory(selectedCategory) {
+    var id = 0;
+    {% for post in site.projects %}
+      var tags = {{ post.category | jsonify }};
+
+      var postDiv = document.getElementById(({{ post.importance }}).toString());
+      postDiv.style.display =
+        (selectedCategory == 'ALL' || tags.includes(selectedCategory)) 
+          ? 'flex'
+          : 'none';
+    {% endfor %}
+    
+    var catButtons = document.getElementsByClassName("category-button");
+    for (let i in catButtons) {
+      let button = catButtons[i];
+      if (button.id == selectedCategory) {
+        button.classList.add("active");
+      } else {
+        button.className = "category-button";
+      }
+    }
+  }
+</script>

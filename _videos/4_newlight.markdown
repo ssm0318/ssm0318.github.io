@@ -1,10 +1,10 @@
 ---
 layout: page
-title: 10cm - 오늘 밤은 어둠이 무서워요
+title: John Mayer - New Light
 description: a project with a background image
-link: https://www.youtube.com/embed/FKJUDSK-T-c
-importance: 3
-category: [Video Production, Singing]
+link: https://www.youtube.com/embed/-mVO7vggBoY
+importance: 4
+category: [Singing]
 ---
 
 Every project has a beautiful feature showcase page.

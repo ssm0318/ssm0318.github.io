@@ -2,6 +2,10 @@
  * Styles for the base elements of the theme.
  ******************************************************************************/
 
+body {
+  overflow-y: scroll; /* Show scrollbars */
+}
+
 // Typography
 
 .navbar-brand {
@@ -11,6 +15,7 @@
 
 h1, h2, h3, h4, h5, h6 {
   font-family: Roboto Slab;
+  margin-bottom: 10px;
 }
 
 .nav-item, p, em, div, span, strong {
@@ -223,10 +228,11 @@ blockquote {
 
 .social {
   text-align: center;
-  margin-top: 40px;
   .contact-icons {
-    font-size: 4rem;
+    font-size: 3rem;
     a {
+      margin-left: 1px;
+      margin-right: 1px;
       i::before {
         color: var(--global-footer-bg-color);
         -webkit-transition: all 0.2s ease-in-out;
@@ -246,9 +252,9 @@ blockquote {
 
 // Footer
 footer.fixed-bottom {
+  vertical-align: middle;
   background-color: var(--global-footer-bg-color);
   font-size: 0.75rem;
-
   .container {
     color: var(--global-footer-text-color);
     padding-top: 9px;
@@ -264,22 +270,21 @@ footer.fixed-bottom {
 }
 
 footer.sticky-bottom {
-  background-color: var(--global-footer-bg-color);
   border-top: 1px solid $grey-color-light;
-  padding-top: 8px;
-  padding-bottom: 9px;
-  font-size: small;
+  padding-top: 30px;
+  padding-bottom: 40px;
+  font-size: 0.9rem;
 
-  .container {
-    color: var(--global-footer-text-color);
+  .notes {
+    text-align: center;
+    margin-top: 20px;
   }
-  a {
-    color: var(--global-footer-link-color);
-    &:hover {
-      color: var(--global-theme-color);
-      text-decoration: none;
-    }
-  }
+}
+
+// About
+.about {
+  width: 900px;
+  align-items: center;
 }
 
 
@@ -349,12 +354,11 @@ footer.sticky-bottom {
 }
 
 
-// Projects
+// fun
 
 .fun {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
-  margin-bottom: 270px !important;
 
   .video-title {
     font-weight: bolder;
@@ -376,6 +380,7 @@ footer.sticky-bottom {
     width: 100%;
     height: 100%;
     border: 0;
+    background: gray;
   }
 
   .badge {
@@ -398,10 +403,58 @@ footer.sticky-bottom {
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
   }
 
-  .badge:hover {
+  .badge:hover,
+  .badge:active {
     background: var(--global-theme-color);
     color: white !important;
     font-weight: 600;
+  }
+}
+
+// projects
+
+.projects {
+  a {
+    text-decoration: none;
+
+    &:hover {
+      .card-title {
+        color: var(--global-theme-color);
+      }
+    }
+  }
+
+  .card {
+    img {
+      width: 100%;
+    }
+    .card-title {
+      color: $black-color;
+    }
+  }
+
+  .card-item {
+    width: auto;
+    margin-bottom: 30px;
+
+    .row {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .grid-item {
+    width: 250px;
+    margin-bottom: 10px;
+  }
+
+  h2.category {
+    color: $grey-color-light;
+    border-bottom: 1px solid $grey-color-light;
+    padding-top: 0.5rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    text-align: right;
   }
 
   .categories {
@@ -443,55 +496,14 @@ footer.sticky-bottom {
   }
 }
 
-.projects {
-  a {
-    text-decoration: none;
-
-    &:hover {
-      .card-title {
-        color: var(--global-theme-color);
-      }
-    }
-  }
-
-  .card {
-    img {
-      width: 100%;
-    }
-    .card-title {
-      color: $black-color;
-    }
-  }
-
-  .card-item {
-    width: auto;
-    margin-bottom: 10px;
-
-    .row {
-      display: flex;
-      align-items: center;
-    }
-  }
-
-  .grid-item {
-    width: 250px;
-    margin-bottom: 10px;
-  }
-
-  h2.category {
-    color: $grey-color-light;
-    border-bottom: 1px solid $grey-color-light;
-    padding-top: 0.5rem;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-    text-align: right;
-  }
-}
-
 
 // Publications
 
 .publications {
+  div {
+    margin-bottom: 3px;
+  }
+
   margin-top: 2rem;
   h1 {
     color: var(--global-theme-color);
@@ -501,7 +513,7 @@ footer.sticky-bottom {
     margin-bottom: 1em;
   }
   h2 {
-    margin-bottom: 1rem;
+    margin-bottom: 1.2rem;
     span {
       font-size: 1.5rem;
     }
@@ -524,6 +536,7 @@ footer.sticky-bottom {
       .abbr {
         height: 2rem;
         margin-bottom: 0.5rem;
+        padding-left: 30px;
         abbr {
           display: inline-block;
           background-color: var(--global-theme-color);
