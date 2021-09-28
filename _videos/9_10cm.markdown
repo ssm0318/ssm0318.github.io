@@ -3,8 +3,8 @@ layout: page
 title: 10cm - 오늘 밤은 어둠이 무서워요
 description: a project with a background image
 link: https://www.youtube.com/embed/FKJUDSK-T-c
-importance: 7
-category: [Video Production, Singing]
+importance: 9
+category: [Video Production, Singing, Featured]
 ---
 
 Every project has a beautiful feature showcase page.

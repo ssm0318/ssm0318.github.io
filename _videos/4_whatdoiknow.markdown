@@ -1,10 +1,10 @@
 ---
 layout: page
-title: John Mayer - New Light
+title: Ed Sheeran - What Do I Know?
 description: a project with a background image
-link: https://www.youtube.com/embed/-mVO7vggBoY
+link: https://www.youtube.com/embed/AY6Pm5O5xaA
 importance: 4
-category: [Singing]
+category: [Singing, Featured]
 ---
 
 Every project has a beautiful feature showcase page.

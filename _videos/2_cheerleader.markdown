@@ -4,7 +4,7 @@ title: Pentatonix - Cheerleader
 description: a project with a background image
 link: https://www.youtube.com/embed/Wgd0SikK3B8
 importance: 2
-category: [Singing]
+category: [Singing, Featured]
 ---
 
 Every project has a beautiful feature showcase page.

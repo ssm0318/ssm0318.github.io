@@ -1,10 +1,10 @@
 ---
 layout: page
-title: Alec Benjamin - Let Me Down Slowly
+title: John Mayer - New Light
 description: a project with a background image
-link: https://www.youtube.com/embed/lhJ-LrmNnW4
+link: https://www.youtube.com/embed/-mVO7vggBoY
 importance: 22
-category: [Singing]
+category: [Singing, Featured]
 ---
 
 Every project has a beautiful feature showcase page.

@@ -17,7 +17,7 @@ category: [Singing, Video Production]
       <div class="video-title col-sm-4 mt-3 mt-md-0">
         {{ project.title }}<br>
         {% for category in project.category %}
-          <button class="badge" onclick="filterUsingCategory('{{ category }}')">{{ category }}</button>
+          <span class="badge">{{ category }}</span>
         {% endfor %}
       </div>
       <div class="video-container col-sm-8 mt-3 mt-md-0">
@@ -26,28 +26,3 @@ category: [Singing, Video Production]
     </div>
   {% endfor %}
 </div>
-
-<script type="text/javascript">
-  function filterUsingCategory(selectedCategory) {
-    var id = 0;
-    {% for post in site.videos %}
-      var tags = {{ post.category | jsonify }};
-
-      var postDiv = document.getElementById(({{ post.importance }}).toString());
-      postDiv.style.display =
-        (selectedCategory == 'ALL' || tags.includes(selectedCategory)) 
-          ? 'flex'
-          : 'none';
-    {% endfor %}
-    
-    var catButtons = document.getElementsByClassName("category-button");
-    for (let i in catButtons) {
-      let button = catButtons[i];
-      if (button.id == selectedCategory) {
-        button.classList.add("active");
-      } else {
-        button.className = "category-button";
-      }
-    }
-  }
-</script>

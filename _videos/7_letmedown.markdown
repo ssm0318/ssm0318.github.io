@@ -1,10 +1,10 @@
 ---
 layout: page
-title: Ed Sheeran - What Do I Know?
+title: Alec Benjamin - Let Me Down Slowly
 description: a project with a background image
-link: https://www.youtube.com/embed/AY6Pm5O5xaA
-importance: 9
-category: [Singing]
+link: https://www.youtube.com/embed/lhJ-LrmNnW4
+importance: 7
+category: [Singing, Featured]
 ---
 
 Every project has a beautiful feature showcase page.

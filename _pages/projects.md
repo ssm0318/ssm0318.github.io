@@ -11,12 +11,12 @@ horizontal: false
 
 <div class="projects">
   <div class="categories">
-    <button id="ALL" class="category-button active" onclick="filterUsingCategory('ALL')">ALL</button>
+    <span id="all" class="category-button active" onclick="filterUsingCategory('all')">all ({{ site.projects.size }})</span>
     {% assign site_categories = site.projects | map: "category" | compact | uniq %}
     {% for category in site_categories %}
-      <button id="{{ category }}" class="category-button" onclick="filterUsingCategory('{{ category }}')">{{ category }}
+      <span id="{{ category }}" class="category-button" onclick="filterUsingCategory('{{ category }}')">{{ category }}
         {% assign sel = site.projects | where_exp:"item", "item.category contains category" %}
-        ({{ sel.size }})</button>
+        ({{ sel.size }})</span>
     {% endfor %}
   </div>
 
@@ -38,7 +38,7 @@ horizontal: false
 
       var postDiv = document.getElementById(({{ post.importance }}).toString());
       postDiv.style.display =
-        (selectedCategory == 'ALL' || tags.includes(selectedCategory)) 
+        (selectedCategory == 'all' || tags.includes(selectedCategory)) 
           ? 'flex'
           : 'none';
     {% endfor %}

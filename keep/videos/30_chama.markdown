@@ -4,7 +4,7 @@ title: 구원찬 - 차마
 description: a project with a background image
 link: https://www.youtube.com/embed/oH6fujqzhqc
 importance: 30
-category: [Singing, Video Production]
+category: [Singing, Video Production, Featured]
 ---
 
 Every project has a beautiful feature showcase page.

@@ -4,7 +4,7 @@ title: Daniel Powter - Bad Day
 description: Where is the moment we needed the most?
 link: https://www.youtube.com/embed/d9lY7iuHBw4
 importance: 3
-category: [Video Production, Singing]
+category: [Video Production, Singing, Featured]
 ---
 
 Every project has a beautiful feature showcase page.

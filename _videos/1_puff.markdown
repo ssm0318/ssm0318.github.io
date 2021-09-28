@@ -4,7 +4,7 @@ title: Peter, Paul & Mary - Puff the Magic Dragon
 description: a project with a background image
 link: https://www.youtube.com/embed/yO4yNjypWI8
 importance: 1
-category: [Video Production, Singing]
+category: [Video Production, Singing, Featured]
 ---
 
 Every project has a beautiful feature showcase page.

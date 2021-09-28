@@ -1,34 +1,38 @@
 <div class="card-item col-md-4"  id="{{ project.importance }}">
-  {% if project.redirect %}
-  <a href="{{ project.redirect }}" target="_blank">
-  {% else %}
-  <a href="{{ project.url | relative_url }}">
-  {% endif %}
-    <div class="card hoverable">
-      {% if project.img %}
-        <img src="{{ project.img | relative_url }}" alt="project thumbnail">
-      {% endif %}
-      <div class="col-md-12">
-        <div class="card-body">
-          <h2 class="card-title text-lowercase">{{ project.title }}</h2>
-          <p class="card-text">{{ project.description }}</p>
-          <div class="row ml-1 mr-1 p-0">
-            {% if project.github %}
-            <div class="github-icon">
-              <div class="icon" data-toggle="tooltip" title="Code Repository">
-                <a href="{{ project.github }}" target="_blank"><i class="fab fa-github gh-icon"></i></a>
-              </div>
-              {% if project.github_stars %}
-              <span class="stars" data-toggle="tooltip" title="GitHub Stars">
-                <i class="fas fa-star"></i>
-                <span id="{{ project.github_stars }}-stars"></span>
-              </span>
-              {% endif %}
-            </div>
-            {% endif %}
-          </div>
+  <div class="card hoverable" data-toggle="modal" data-target="#{{ project.title | slugify }}">
+    <div id="{{ project.title | slugify }}" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <h2>{{ project.title }}</h2>
+          <p>{{ project.description }}</p>
+          <hr>
+          {{ project.content }}
         </div>
       </div>
     </div>
-  </a>
+    {% if project.img %}
+      <img src="{{ project.img | relative_url }}" alt="project thumbnail">
+    {% endif %}
+    <div class="col-md-12">
+      <div class="card-body">
+        <h2 class="card-title text-lowercase">{{ project.title }}</h2>
+        <p class="card-text">{{ project.description }}</p>
+        <div class="row ml-1 mr-1 p-0">
+          {% if project.github %}
+          <div class="github-icon">
+            <div class="icon" data-toggle="tooltip" title="Code Repository">
+              <a href="{{ project.github }}" target="_blank"><i class="fab fa-github gh-icon"></i></a>
+            </div>
+            {% if project.github_stars %}
+            <span class="stars" data-toggle="tooltip" title="GitHub Stars">
+              <i class="fas fa-star"></i>
+              <span id="{{ project.github_stars }}-stars"></span>
+            </span>
+            {% endif %}
+          </div>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
