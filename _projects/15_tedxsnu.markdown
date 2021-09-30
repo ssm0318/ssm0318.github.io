@@ -1,4 +1,4 @@
----
+<!-- ---
 layout: page
 title: Seeing with a Blind Mind's Eye
 description: TEDxSNU speech on aphantasia and its implications on individual differences
@@ -9,4 +9,4 @@ category: [personal]
 tag: [TEDxSNU, aphantasia, individual difference]
 ---
 
-Verilog
+Verilog -->

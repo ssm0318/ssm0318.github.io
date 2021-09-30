@@ -1,4 +1,4 @@
----
+<!-- ---
 layout: page
 title: CollaboraTA
 description: Mitigating Cognitive Overload of Lecturers in Live Online Classes
@@ -8,4 +8,4 @@ category: [coursework, research]
 tag: [cognitive load, online lectures]
 ---
 
-Verilog
+Verilog -->

@@ -1,4 +1,4 @@
----
+<!-- ---
 layout: page
 title: IT and the Elderly
 description: Understanding the demographics of interaction partners as a means to increase the acceptance of Information Technology by the elderly
@@ -18,4 +18,4 @@ tag: [technology acceptance, aging]
 
 SNS를 통한 사회적 소통의 경우, 연령이 높은 집단일수록 선호도가 낮아지는 현상이 고르게 나타났다. 청년 참여자들의 경우 동성 집단을 선호한 반면 노인 참여자들의 경우 이성 집단을 선호하는 모습을 보였다.
 
-청년 참여자들은 40대 여성이나 남성에 대한 선호가 가장 높았다. 현업에서 가장 활발하게 일하는 연령대의 집단이라는 인식이 작용한 것으로 보인다. 그러나 노인 참여자들의 경우 40대는 ‘아직 어리다’는 표현을 자주 사용하며, 40대 여성이나 남성 집단에 대한 낮은 선호도를 보였다.
+청년 참여자들은 40대 여성이나 남성에 대한 선호가 가장 높았다. 현업에서 가장 활발하게 일하는 연령대의 집단이라는 인식이 작용한 것으로 보인다. 그러나 노인 참여자들의 경우 40대는 ‘아직 어리다’는 표현을 자주 사용하며, 40대 여성이나 남성 집단에 대한 낮은 선호도를 보였다. -->

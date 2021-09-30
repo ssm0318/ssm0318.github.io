@@ -1,4 +1,4 @@
----
+<!-- ---
 layout: page
 title: Broadening the Scope of Appreciative Inquiry
 description: Overcoming possible barriers in the implementation of Appreciative Inquiry through mindfulness meditation
@@ -8,4 +8,4 @@ category: [research, coursework]
 tag: [I/O psychology, appreciative inquiry]
 ---
 
-graduate course
+graduate course -->

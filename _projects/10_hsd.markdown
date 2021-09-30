@@ -1,4 +1,4 @@
----
+<!-- ---
 layout: page
 title: MM Multiplication Accelerator
 description: 8x8 Matrix-Matrix multiplication accelerator using Zedboard
@@ -8,4 +8,4 @@ category: [coursework]
 tag: [Verilog, FPGA accelerator, Zedboard]
 ---
 
-Verilog
+Verilog -->

@@ -1,4 +1,4 @@
----
+<!-- ---
 layout: page
 title: Help to Help
 description: Effective and robust detection of adult ADHD in high-achieving groups using smartphones sensors
@@ -18,4 +18,4 @@ Backend
 Ruby on Rails
 Gems: Turbolinks, Figaro, omniauth, omniauth-kakao, semantic UI, faker, Geokit, Carrierwave, Devise, mini_magick, sqlite, jbuilder
 Heroku, EC2
-```
+``` -->

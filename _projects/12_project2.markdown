@@ -1,4 +1,4 @@
----
+<!-- ---
 layout: page
 title: Anatomical Imaging Range
 description: Determining the ideal range to minimize radiation dose in X-ray imaging
@@ -8,4 +8,4 @@ category: [coursework]
 tag: [CR images, edge detection, FCN]
 ---
 
-Verilog
+Verilog -->
