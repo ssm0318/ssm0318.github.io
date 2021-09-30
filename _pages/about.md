@@ -20,4 +20,4 @@ Hi! :) I am a final year undergraduate student at [Seoul National University](ht
 
 Broadly speaking, I am interested in cross-disciplinary works, such as 1) building playful :monkey:, personalized, and situation-aware `intervention systems` that promote well-being, 2) capturing and understanding `individual differences` in the digital world, and 3) integrating data-driven and theory-driven approaches for `human-centered computing` research.
 
-In my free time, I chat with my two chihuahuas and [sing](https://www.youtube.com/c/%EA%B0%90%EA%B7%A4%EA%B0%9C%EA%B5%AC%EB%A6%ACtangerinefrogs).
+In my free time, I chat with my two chihuahuas and <a href="https://www.youtube.com/c/%EA%B0%90%EA%B7%A4%EA%B0%9C%EA%B5%AC%EB%A6%ACtangerinefrogs" target="_blank">sing</a>.
