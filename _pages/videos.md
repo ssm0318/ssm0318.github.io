@@ -8,8 +8,6 @@ nav: true
 category: [Singing, Video Production]
 ---
 
-<!-- https://langrsoft.com/2020/03/26/filtering-blog-posts-by-category-with-jekyll/ -->
-
 <div class="fun">
   {% assign sorted_projects = site.videos | sort: "importance" %}
   {% for project in sorted_projects %}
