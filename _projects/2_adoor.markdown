@@ -6,76 +6,43 @@ img: /assets/img/adoor/adoor.png
 link: https://www.facebook.com/adoor.team
 github: https://github.com/swsnu/swpp2020-team8/wiki
 importance: 2
-category: [personal, coursework]
+category: [personal, coursework, research]
 tag: [Django, React, PostgreSQL]
+html: https://www.facebook.com/adoor.team 
+pdf: 
+code: https://github.com/swsnu/swpp2020-team8/wiki
+slides: 
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <a href="/assets/pdf/adoor_poster.pdf" target="_blank"><img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/adoor/adoor.png' }}" alt="" title="example image"/></a>
+    </div>
+</div>
+<div class="caption">
+    https://www.adoor.world/
+</div>
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+In the article "A Software Engineer's Advice for Saving Social Media? Keep It Small" by Meg Miller, the author quotes Darius Kazemi, a renowned Internet artist who refers to ​Facebook as the "digital equivalent of a town square," and advocates for sites that are more like `"a chill house party with a considered guest list"​`. The key, he emphasizes, is keeping the social network small so that it can serve specifically for the needs of the community - in ways that social networks with millions of users never could.
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+Our preference for social media platform has changed over the years. *Cyworld*, a private social media for close relationships serviced in Korea, used to be the most dominant social media platform for several years, but it has been completely replaced with newer social media platforms. Ever since the current model of “town square” social media gained popularity, people have constantly been reminiscing their very own cyber world. Many turned to Blogs, Finstagram accounts and various other alternatives for their very own ‘chill house parties’. ​The needs of the the users who prefer Cyworld over Facebook or Instagram are facing are not gone, but unmet.
+
+To address such problem and suggest a complementary social media ideal for building close relationships online through personalized conversation starters. The design and implementation of our service is as detailed below. 
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/1.jpg' | relative_url }}" alt="" title="example image"/>
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/3.jpg' | relative_url }}" alt="" title="example image"/>
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/5.jpg' | relative_url }}" alt="" title="example image"/>
+        <a href="/assets/pdf/adoor_poster.pdf" target="_blank"><img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/adoor_poster.png' }}" alt="" title="example image"/></a>
     </div>
 </div>
 <div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/5.jpg' | relative_url }}" alt="" title="example image"/>
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
+    Link to design and planning document: <br><a href="https://github.com/swsnu/swpp2020-team8/wiki/Design-and-Planning" target="_blank">https://github.com/swsnu/swpp2020-team8/wiki/Design-and-Planning</a>
 </div>
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, *bled* for your project, and then... you reveal it's glory in the next row of images.
-
-
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/6.jpg' | relative_url }}" alt="" title="example image"/>
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/11.jpg' | relative_url }}" alt="" title="example image"/>
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
-
-
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/" target="_blank">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-```html
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/6.jpg' | relative_url }}" alt="" title="example image"/>
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/11.jpg' | relative_url }}" alt="" title="example image"/>
-    </div>
-</div>
-```
+    ---
+    [My role]
+    - Service design, user study, system development (as detailed below)
+    1. Backend: Django (Django REST Framework), Postgresql
+    2. ML recommendation system: Mecab, Konlpy, scikit-learn
+    3. Testing: Locust, django-test-plus, Jest, Enzyme
+    4. Frontend: React.js, Chrome extension
+    --- 

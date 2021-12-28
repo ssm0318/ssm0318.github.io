@@ -33,6 +33,7 @@
     
     <div class="notes">
       &copy; {{ site.time | date: '%Y' }} {{ site.first_name }} {{ site.middle_name }} {{ site.last_name }}.<br>
+      Contact: {{ site.email }}<br>
       {{ site.footer_text }}
       {% if site.impressum_path %}
       <a href="{{ site.url }}{{ site.baseurl }}{{ site.impressum_path }}">Impressum</a>.
