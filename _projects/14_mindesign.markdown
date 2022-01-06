@@ -4,7 +4,7 @@ title: Mindesign
 description: Cartoons to share insights from psychology research
 link: https://www.facebook.com/withmadi
 img: /assets/img/mindesign.jpeg
-importance: 10
+importance: 11
 category: [personal]
 tag: [cartoon, positive psychology]
 html: https://www.facebook.com/withmadi
