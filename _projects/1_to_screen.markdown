@@ -1,7 +1,7 @@
 ---
 layout: page
-title: To Screen or Not to Screen?
-description: Predicting Subtle Malingering of Adult ADHD Symptoms in College Students
+title: Struggling, or Not Sufficiently So?
+description: Understanding Unintentional Malingering in Adult ADHD
 img: /assets/img/dopameter_procedure.png
 importance: 1
 category: [research]
@@ -9,7 +9,7 @@ tag: [mobile sensing, data analysis]
 html: 
 pdf: '/assets/pdf/dopameter.pdf'
 code: https://drive.google.com/file/d/11zPhSw-yU72jpfayo9sOGmVxwNevw840/view 
-slides: '/assets/pdf/dopameter_slides.pdf'
+# slides: '/assets/pdf/dopameter_slides.pdf'
 ---
 
 Extant approaches to assess adult ADHD are easily subject to malingering of symptoms, and solutions to detect `subtle malingering` (i.e., subconsciously reporting exaggerated symptoms) are especially rare. 
