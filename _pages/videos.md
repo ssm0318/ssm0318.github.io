@@ -1,6 +1,6 @@
 ---
 layout: page
-# title: videos
+title: videos
 label: 3_videos
 permalink: /videos/
 description:
