@@ -11,9 +11,9 @@ profile:
   address: >
     no that is not your cursor.. 😄
 
-news: true  # includes a list of news items
-selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true  # includes social icons at the bottom of the page
+news: false # includes a list of news items
+selected_papers: false # includes a list of papers marked as "selected={true}"
+social: false # includes social icons at the bottom of the page
 ---
 
 Hi! :) I am a final year undergraduate student at [Seoul National University](https://en.snu.ac.kr/), majoring in Happiness Studies (a student-designed major!), Psychology, and Computer Science & Engineering. I am fortunate to be advised by Dr. Youngki Lee at [HCS Lab](https://hcs.snu.ac.kr/).
