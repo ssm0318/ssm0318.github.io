@@ -27,7 +27,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-item, p, em, div, span, strong {
-//   font-family: Rubik;
+  font-family: Roboto;
 }
 
 p, h1, h2, h3, h4, h5, h6, em, div, span, strong {
@@ -218,7 +218,7 @@ ul.task-list input[type="checkbox"] {
 
 @media (min-width: 576px) {
   .profile {
-    width: 270px;
+    width: 200px;
   }
 
   .about {
@@ -848,7 +848,7 @@ footer.sticky-bottom {
   color: var(--global-theme-color) !important;
   border-radius: 3px;
   display: inline-block;
-  font-family: Inconsolata !important;
+  font-family: Helvetica !important;
   padding: 2px 7px;
   font-size: 0.75rem;
   font-weight: 500;
