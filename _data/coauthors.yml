@@ -1,34 +1,35 @@
-"adams":
-  - firstname: ["Edwin", "E.", "E. P.", "Edwin Plimpton"]
-    url: https://en.wikipedia.org/wiki/Edwin_Plimpton_Adams
+"cho":
+  - firstname: ["Soobin"]
+    url: https://5oobin.github.io/website/
 
-"podolsky":
-  - firstname: ["Boris", "B.", "B. Y.", "Boris Yakovlevich"]
-    url: https://en.wikipedia.org/wiki/Boris_Podolsky
+"hiniker":
+  - firstname: ["Alexis"]
+    url: https://alexishiniker.com/
 
-"rosen":
-  - firstname: ["Nathan", "N."]
-    url: https://en.wikipedia.org/wiki/Nathan_Rosen
+"wolfe":
+  - firstname: ["Robert"]
+    url: https://wolferobert3.github.io/
 
-"bach":
-  - firstname: ["Johann Sebastian", "J. S."]
-    url: https://en.wikipedia.org/wiki/Johann_Sebastian_Bach
+"popowski":
+  - firstname: ["Lindsay"]
+    url: https://lipopowski.github.io/
 
-  - firstname: ["Carl Philipp Emanuel", "C. P. E."]
-    url: https://en.wikipedia.org/wiki/Carl_Philipp_Emanuel_Bach
+"liu":
+  - firstname: ["Fannie"]
+    url: https://fannieliu.com/#
 
-"przibram":
-  - firstname: ["Karl"]
-    url: https://link.springer.com/article/10.1007/s00016-019-00242-z
+"davis":
+  - firstname: ["Katie"]
+    url: https://katiedavisresearch.com/
 
-"schrodinger":
-  - firstname: ["Erwin"]
-    url: https://en.wikipedia.org/wiki/Erwin_Schr%C3%B6dinger
+"fang":
+  - firstname: ["Anna"]
+    url: https://annamfang.com/
 
-"lorentz":
-  - firstname: ["Hendrik Antoon"]
-    url: https://en.wikipedia.org/wiki/Hendrik_Lorentz
+"pyle":
+  - firstname: ["Cassidy"]
+    url: https://www.cassidypyle.com/
 
-"planck":
-  - firstname: ["Max"]
-    url: https://en.wikipedia.org/wiki/Max_Planck
+"zhang":
+  - firstname: ["Amy", "Amy X."]
+    url: https://homes.cs.washington.edu/~axz/
