@@ -40,6 +40,7 @@ layout: default
 
     <div class="clearfix">{{ content }}</div>
 
+    <br>
     <!-- News -->
     {% if page.news and site.announcements.enabled %}
       <h2>
@@ -57,6 +58,7 @@ layout: default
     {% endif %}
 
     <!-- Selected papers -->
+    <br><br>
     {% if page.selected_papers %}
       <h2>
         <a href="{{ '/publications/' | relative_url }}" style="color: inherit">selected publications</a>
