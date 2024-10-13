@@ -1,23 +1,28 @@
 ---
 layout: about
 title: about
-label: 1_about
 permalink: /
-description:
+subtitle: PhD Candidate @ UW iSchool
 
 profile:
-  align: left
+  align: right
   image: prof_pic.jpg
-  address: >
-    no that is not your cursor.. 😄
+  image_circular: true # crops the image to make it circular
+  more_info: >
+    <p>Email:</p>
+    <p>jaewonk at uw dot edu</p>
 
 news: false # includes a list of news items
-selected_papers: false # includes a list of papers marked as "selected={true}"
-social: false # includes social icons at the bottom of the page
+selected_papers: true # includes a list of papers marked as "selected={true}"
+social: true # includes social icons at the bottom of the page
 ---
 
-Hi! :) I am a rising 3rd year PhD candidate student at the University of Washington Information School, advised by Prof. [Alexis Hiniker](https://www.alexishiniker.com/) at the [User Empowerment Lab](https://www.userempowerment.org/).
+Hi! :) I am a 3rd year PhD candidate at the University of Washington Information School, advised by Prof. [Alexis Hiniker](https://www.alexishiniker.com/) at the [User Empowerment Lab](https://www.userempowerment.org/).
 
-Broadly speaking, my research is in the field of human-computer interaction and social computing. I focus on 1) understanding, 2) designing, and 3) building social technologies---from broadcast social media to extended reality systems---that center on positive relationship building, especially for the youth.
+My research lies broadly in human-computer interaction (HCI) and social computing. I combine empirical work with design and system-building approaches to understand and envision social technologies for `fostering meaningful social connections online`, especially for youth 👯.
 
-In my free time, I chat with my two chihuahuas' photos (living back home 🇰🇷) and <a href="https://www.youtube.com/c/%EA%B0%90%EA%B7%A4%EA%B0%9C%EA%B5%AC%EB%A6%ACtangerinefrogs" target="_blank">sing</a>.
+I am especially passionate about <a href="https://positech-cscw-2024.github.io/" target="_blank">Positech</a> research (centering human flourishing in social technology design) and am open to collaborations aligning with this vision. Keywords that spark my interest include social AR/VR, mental health and well-being, online communities, and conversational agents.
+
+Outside of research, you can find me <a href="https://www.youtube.com/c/%EA%B0%90%EA%B7%A4%EA%B0%9C%EA%B5%AC%EB%A6%ACtangerinefrogs" target="_blank">singing</a>, daydreaming, and slowly running, biking, and swimming with hopes of a triathlon someday (emphasis on "slowly").
+<br>
+<br>
