@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Finally making enough research progress to actually maintain my website---guess that's a start 🫠
+Finally making enough research progress to actually maintain a website---guess that's a start 😁

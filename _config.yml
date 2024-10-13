@@ -196,6 +196,9 @@ collections:
   projects:
     output: true
     permalink: /:collection/:title/
+  fun:
+    output: true
+    permalink: /fun/:path/
 
 announcements:
   enabled: true
