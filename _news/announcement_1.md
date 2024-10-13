@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-🤩 Excited to serve as a student volunteer for <a href="https://ieeeismar.org/" target="_blank">IEEE ISMAR 2024</a>---this will be my first ever conference!
+Excited to serve as a student volunteer for <a href="https://ieeeismar.org/" target="_blank">IEEE ISMAR 2024</a>---this will be my first ever conference 🤩

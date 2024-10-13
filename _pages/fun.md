@@ -20,7 +20,7 @@ category: [Singing, Video Production]
         {% endfor %}
       </div>
       <div class="video-container col-sm-8 mt-3 mt-md-0">
-        <iframe class="video lazy-video" loading="lazy" data-src="{{ project.link }}" frameborder="0" allow="accelerometer; autoplay *; clipboard-write; encrypted-media *; gyroscope; picture-in-picture; fullscreen *" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-presentation allow-top-navigation-by-user-activation" allowfullscreen></iframe>
+        <iframe class="video lazy-video" width="100%" loading="lazy" data-src="{{ project.link }}" frameborder="0" allow="accelerometer; autoplay *; clipboard-write; encrypted-media *; gyroscope; picture-in-picture; fullscreen *" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-presentation allow-top-navigation-by-user-activation" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       </div>
     </div>
   {% endfor %}
@@ -29,26 +29,22 @@ category: [Singing, Video Production]
 <script>
 document.addEventListener("DOMContentLoaded", function() {
     const lazyVideos = document.querySelectorAll(".lazy-video");
-    const batchSize = 2;  // Number of videos to load at a time
+    const batchSize = 2;
     let currentBatch = 0;
 
-    // Load initial two videos
     loadNextBatch();
 
-    // Function to load the next batch of videos
     function loadNextBatch() {
         const start = currentBatch * batchSize;
         const end = start + batchSize;
 
-        // Iterate over the next batch of videos and load them
         for (let i = start; i < end && i < lazyVideos.length; i++) {
             let video = lazyVideos[i];
-            video.src = video.dataset.src; // Set the real video source from data-src
+            video.src = video.dataset.src;
         }
 
         currentBatch++;
         
-        // If there are more videos to load, set a delay for the next batch
         if (currentBatch * batchSize < lazyVideos.length) {
             setTimeout(loadNextBatch, 200);  // Delay of 0.5 seconds
         }
