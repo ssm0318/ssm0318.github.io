@@ -285,6 +285,7 @@ sass:
 
 jekyll-minifier:
   exclude: ["robots.txt", "assets/js/search/*.js", "assets/libs/**/*"]
+  exclude: ["robots.txt", "assets/js/search/*.js", "assets/libs/**/*"]
   uglifier_args:
     harmony: true
 
@@ -358,7 +359,9 @@ filtered_bibtex_keywords:
     blog,
     code,
     google_scholar_id,
+    google_scholar_id,
     html,
+    inspirehep_id,
     inspirehep_id,
     pdf,
     poster,
