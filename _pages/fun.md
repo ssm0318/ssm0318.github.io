@@ -27,7 +27,7 @@ category: [Singing, Video Production]
   
   <div id="hidden-videos" style="display: none;">
     {% for project in sorted_projects offset: 20 %}
-      <div class="row justify-content-sm-center video-row" id="{{ project.importance }}">
+      <div class="row justify-content-center video-row" id="{{ project.importance }}">
         <div class="video-title col-sm-4 mt-3 mt-md-0">
           {{ project.importance }}. {{ project.title }}<br>
           {% for category in project.category %}
