@@ -43,7 +43,7 @@ category: [Singing, Video Production]
   
   <div>
     <p>
-      These are music covers I led and worked on with about 30 friends from my college. Most of us weren’t pros in music or video, but we came together to create everything ourselves---from the vocals and live instrumentals to mixing, mastering, and video production. With support from Seoul City’s Youth Hub, we wanted to show that with the right group of people, anything can become art :)
+      These are music covers I led and worked on with about 30 friends from college. Most of us weren’t pros in music or video, but we came together to create everything ourselves---from the vocals and live instrumentals to mixing, mastering, and video production. With support from Seoul City’s Youth Hub, we wanted to show that with the right group of people, anything can become art :)
     </p>
   </div>
 
