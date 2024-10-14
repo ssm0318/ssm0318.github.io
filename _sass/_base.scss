@@ -1367,9 +1367,15 @@ ninja-keys::part(ninja-input-wrapper) {
 // highlight-search-term
 ::highlight(search) {
   background-color: var(--global-theme-color);
-  color: var(--global-text-color);
+  color: var(--global-hover-text-color);
 }
 
-.btn .btn-primary {
+.load-btn {
+    background-color: var(--global-back-to-top-bg-color);
+    color: var(--global-hover-text-color);
+}
+
+.load-btn:hover {
     background-color: var(--global-theme-color);
+    color: var(--global-hover-text-color);
 }

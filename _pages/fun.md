@@ -14,7 +14,7 @@ category: [Singing, Video Production]
   {% for project in sorted_projects limit: 20 %}
     <div class="row justify-content-sm-center video-row" id="{{ project.importance }}">
       <div class="video-title col-sm-4 mt-3 mt-md-0">
-        {{ project.title }}<br>
+        {{ project.importance }}. {{ project.title }}<br>
         {% for category in project.category %}
           <span class="badge">{{ category }}</span>
         {% endfor %}
@@ -29,7 +29,7 @@ category: [Singing, Video Production]
     {% for project in sorted_projects offset: 20 %}
       <div class="row justify-content-sm-center video-row" id="{{ project.importance }}">
         <div class="video-title col-sm-4 mt-3 mt-md-0">
-          {{ project.title }}<br>
+          {{ project.importance }}. {{ project.title }}<br>
           {% for category in project.category %}
             <span class="badge">{{ category }}</span>
           {% endfor %}
@@ -49,7 +49,7 @@ category: [Singing, Video Production]
 
   {% if sorted_projects.size > 20 %}
     <div class="row justify-content-sm-center mt-4">
-      <button id="load-more-btn" class="btn btn-primary">Load More</button>
+      <button id="load-more-btn" class="btn load-btn">Load More</button>
     </div>
   {% endif %}
 </div>
