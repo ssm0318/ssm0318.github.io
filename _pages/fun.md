@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 🎵🎶♪
+title: ♪♫♪
 label: fun
 permalink: /fun/
 description:
@@ -43,7 +43,7 @@ category: [Singing, Video Production]
   
   <div>
     <p>
-      These are music covers I led and worked on with about 30 friends from my college. Most of us weren’t pros in music or video, but we came together to create everything ourselves---from the vocals and live instrumentals to mixing, mastering, and video production. With support from Seoul City’s Youth Hub, we wanted to show that with the right group of people, anything can become art.
+      These are music covers I led and worked on with about 30 friends from my college. Most of us weren’t pros in music or video, but we came together to create everything ourselves---from the vocals and live instrumentals to mixing, mastering, and video production. With support from Seoul City’s Youth Hub, we wanted to show that with the right group of people, anything can become art :)
     </p>
   </div>
 
@@ -57,36 +57,51 @@ category: [Singing, Video Production]
 <script>
 document.addEventListener("DOMContentLoaded", function() {
     const lazyVideos = document.querySelectorAll(".lazy-video");
+    const hiddenVideos = document.getElementById("hidden-videos");
+    const loadMoreBtn = document.getElementById("load-more-btn");
+    let videosExpanded = false;
     const batchSize = 2;
-    let currentBatch = 0;
+    const delay = 150;
 
-    loadNextBatch();
+    function loadVideosInBatches() {
+        let currentBatch = 0;
 
-    function loadNextBatch() {
-        const start = currentBatch * batchSize;
-        const end = start + batchSize;
+        function loadNextBatch() {
+            const start = currentBatch * batchSize;
+            const end = start + batchSize;
 
-        for (let i = start; i < end && i < lazyVideos.length; i++) {
-            let video = lazyVideos[i];
-            video.src = video.dataset.src;
+            for (let i = start; i < end && i < lazyVideos.length; i++) {
+                let video = lazyVideos[i];
+                if (!video.src || video.src === "") {
+                    video.src = video.dataset.src;
+                }
+            }
+
+            currentBatch++;
+
+            if (currentBatch * batchSize < lazyVideos.length) {
+                setTimeout(loadNextBatch, delay);
+            }
         }
 
-        currentBatch++;
-        
-        if (currentBatch * batchSize < lazyVideos.length) {
-            setTimeout(loadNextBatch, 200);
-        }
+        loadNextBatch();
     }
 
-    const loadMoreBtn = document.getElementById("load-more-btn");
-    const hiddenVideos = document.getElementById("hidden-videos");
+    function toggleVideos() {
+        if (videosExpanded) {
+            hiddenVideos.style.display = "none";
+            loadMoreBtn.textContent = "Load More";
+        } else {
+            hiddenVideos.style.display = "block";
+            loadMoreBtn.textContent = "Show Less";
+        }
+        videosExpanded = !videosExpanded;
+    }
 
     if (loadMoreBtn) {
-        loadMoreBtn.addEventListener("click", function() {
-            hiddenVideos.style.display = "block";
-            loadMoreBtn.style.display = "none";
-            loadNextBatch();
-        });
+        loadMoreBtn.addEventListener("click", toggleVideos);
     }
+
+    loadVideosInBatches();
 });
 </script>

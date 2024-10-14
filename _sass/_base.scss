@@ -1369,3 +1369,7 @@ ninja-keys::part(ninja-input-wrapper) {
   background-color: var(--global-theme-color);
   color: var(--global-text-color);
 }
+
+.btn .btn-primary {
+    background-color: var(--global-theme-color);
+}
